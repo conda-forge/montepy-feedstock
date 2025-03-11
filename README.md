@@ -1,7 +1,7 @@
 About montepy-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/idaholab/montepy-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/montepy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.montepy.org/
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/idaholab/feedstock-builds/_build/latest?definitionId=None&branchName=main">
-        <img src="https://dev.azure.com/idaholab/feedstock-builds/_apis/build/status/montepy-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24455&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/montepy-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -34,14 +34,14 @@ Current release info
 Installing montepy
 ==================
 
-Installing `montepy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `montepy` from the `conda-forge/label/alpha` channel can be achieved by adding `conda-forge/label/alpha` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/alpha
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `montepy` can be installed with `conda`:
+Once the `conda-forge/label/alpha` channel has been enabled, `montepy` can be installed with `conda`:
 
 ```
 conda install montepy
@@ -56,26 +56,26 @@ mamba install montepy
 It is possible to list all of the versions of `montepy` available on your platform with `conda`:
 
 ```
-conda search montepy --channel conda-forge
+conda search montepy --channel conda-forge/label/alpha
 ```
 
 or with `mamba`:
 
 ```
-mamba search montepy --channel conda-forge
+mamba search montepy --channel conda-forge/label/alpha
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search montepy --channel conda-forge
+mamba repoquery search montepy --channel conda-forge/label/alpha
 
 # List packages depending on `montepy`:
-mamba repoquery whoneeds montepy --channel conda-forge
+mamba repoquery whoneeds montepy --channel conda-forge/label/alpha
 
 # List dependencies of `montepy`:
-mamba repoquery depends montepy --channel conda-forge
+mamba repoquery depends montepy --channel conda-forge/label/alpha
 ```
 
 
@@ -130,7 +130,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the idaholab/montepy-feedstock are
+Note that all branches in the conda-forge/montepy-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
