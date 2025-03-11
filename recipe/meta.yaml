@@ -1,5 +1,5 @@
 {% set name = "montepy" %}
-{% set version = "0.5.4" %}
+{% set version = "1.0.0a2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/montepy-{{ version }}.tar.gz
-  sha256: 18a7e92c9459d41e67da51d8fe98d7f49ae12668075fe4bc21d6daee47e7cf19
+  sha256: 2eb72e38781d138e29066fc190dfc8fdf7306632afe67ff8012891876cd084de
 
 build:
   entry_points:
