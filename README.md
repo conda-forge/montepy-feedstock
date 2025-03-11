@@ -1,7 +1,7 @@
 About montepy-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/montepy-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/idaholab/montepy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.montepy.org/
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24455&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/montepy-feedstock?branchName=main">
+      <a href="https://dev.azure.com/idaholab/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/idaholab/feedstock-builds/_apis/build/status/montepy-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -130,7 +130,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/montepy-feedstock are
+Note that all branches in the idaholab/montepy-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
