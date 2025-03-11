@@ -34,14 +34,14 @@ Current release info
 Installing montepy
 ==================
 
-Installing `montepy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `montepy` from the `conda-forge/label/alpha` channel can be achieved by adding `conda-forge/label/alpha` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/alpha
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `montepy` can be installed with `conda`:
+Once the `conda-forge/label/alpha` channel has been enabled, `montepy` can be installed with `conda`:
 
 ```
 conda install montepy
@@ -56,26 +56,26 @@ mamba install montepy
 It is possible to list all of the versions of `montepy` available on your platform with `conda`:
 
 ```
-conda search montepy --channel conda-forge
+conda search montepy --channel conda-forge/label/alpha
 ```
 
 or with `mamba`:
 
 ```
-mamba search montepy --channel conda-forge
+mamba search montepy --channel conda-forge/label/alpha
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search montepy --channel conda-forge
+mamba repoquery search montepy --channel conda-forge/label/alpha
 
 # List packages depending on `montepy`:
-mamba repoquery whoneeds montepy --channel conda-forge
+mamba repoquery whoneeds montepy --channel conda-forge/label/alpha
 
 # List dependencies of `montepy`:
-mamba repoquery depends montepy --channel conda-forge
+mamba repoquery depends montepy --channel conda-forge/label/alpha
 ```
 
 
