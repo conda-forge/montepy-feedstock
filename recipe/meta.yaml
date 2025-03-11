@@ -9,12 +9,15 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/montepy-{{ version }}.tar.gz
   sha256: 2eb72e38781d138e29066fc190dfc8fdf7306632afe67ff8012891876cd084de
 
+channel_targets:
+  - conda-forge alpha
+
 build:
   entry_points:
     - change_to_ascii = montepy._scripts.change_to_ascii:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
