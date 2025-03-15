@@ -1,5 +1,5 @@
 {% set name = "montepy" %}
-{% set version = "1.0.0a2" %}
+{% set version = "1.0.0a3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/montepy-{{ version }}.tar.gz
-  sha256: 2eb72e38781d138e29066fc190dfc8fdf7306632afe67ff8012891876cd084de
+  sha256: 401483c26b0da0580555edc470f70e1373b597d63075c05078d8d39bde44bed3
 
 
 build:
@@ -15,7 +15,7 @@ build:
     - change_to_ascii = montepy._scripts.change_to_ascii:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
