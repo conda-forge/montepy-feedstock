@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python 3.12
+    - python {{ python_min }}
     - setuptools >=64.0.0
     - setuptools-scm >=8
     - pip
   run:
-    - python >=3.12
+    - python >={{ python_min }}
     - numpy >=2.0
     - sly >=0.4,<=0.5
 
