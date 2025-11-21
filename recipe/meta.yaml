@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.12
     - setuptools >=64.0.0
     - setuptools-scm >=8
     - pip
   run:
-    - python >={{ python_min }}
-    - numpy >=1.18
+    - python >=3.12
+    - numpy >=2.0
     - sly >=0.4,<=0.5
 
 test:
